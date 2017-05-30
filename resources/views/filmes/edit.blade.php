@@ -6,8 +6,7 @@ Nome:
 <input type="text" name="titulo" value="{{$filmes[0]->titulo}}">
 Ano:
 <input type="text" name="ano" value="{{$filmes[0]->ano}}">
-Trailer:
-<input type="text" name="trailer" value="{{$filmes[0]->trailer}}">
+
 Genero:
 <select name="genero" id="genero" class="form-control">
                             
@@ -17,8 +16,7 @@ Genero:
                             
                         
                         </select>
-Imagem:
-<input type="text" name="imagem" value="{{$filmes[0]->imagem}}">
+
 
 
 
