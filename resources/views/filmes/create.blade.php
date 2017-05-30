@@ -5,8 +5,6 @@ Nome:
 <input type="text" name="titulo">
 Ano:
 <input type="text" name="ano">
-Trailer:
-<input type="text" name="trailer">
 Genero:
 <select name="genero" id="genero" class="form-control">
                             
@@ -16,8 +14,7 @@ Genero:
                             
                         
                         </select>
-Imagem:
-<input type="text" name="imagem">
+
 
 
 
