@@ -42,10 +42,8 @@ class FilmeController extends Controller
     {
         $filme = new Filme();
         $filme->titulo = $request->titulo;
-        $filme->trailer = $request->trailer;
         $filme->ano = $request->ano;
         $filme->genero_id = $request->genero;
-        $filme->imagem = $request->imagem;
         $filme->save();
         return redirect('filmes');
     }
@@ -85,10 +83,8 @@ class FilmeController extends Controller
     {
         $generos = Filme::find($filme->id);
         $filme->titulo = $request->titulo;
-        $filme->trailer = $request->trailer;
         $filme->ano = $request->ano;
         $filme->genero_id = $request->genero;
-        $filme->imagem = $request->imagem;
         $filme->save();
         return redirect('filmes');
     }
