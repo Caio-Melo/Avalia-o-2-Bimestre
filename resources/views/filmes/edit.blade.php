@@ -1,4 +1,5 @@
-
+@extends('layouts.navbar')
+@section('conteudo')
 <form method="POST" action="{{ route('filmes.update', $filmes[0]->id) }}">
      {{csrf_field()}}
      <input type="hidden" name="_method" value="put">
@@ -22,3 +23,4 @@ Genero:
 
 <input type="submit" value="Cadastrar">
 </form>
+@endsection

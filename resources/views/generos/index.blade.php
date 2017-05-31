@@ -1,3 +1,5 @@
+@extends('layouts.navbar')
+@section('conteudo')
 <a href="/generos/create">Cadastrar</a>
 
 <table class="table table-striped">
@@ -36,3 +38,4 @@
         @endforeach
     </tbody>
 </table>
+@endsection

@@ -1,4 +1,5 @@
-
+@extends('layouts.navbar')
+@section('conteudo')
 <form method="POST" action="{{ route('filmes.store')}}">
      {{csrf_field()}}
 Nome: 
@@ -20,3 +21,4 @@ Genero:
 
 <input type="submit" value="Cadastrar">
 </form>
+@endsection
