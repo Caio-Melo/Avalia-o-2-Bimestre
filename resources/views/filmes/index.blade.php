@@ -1,6 +1,6 @@
 @extends('layouts.navbar')
 @section('conteudo')
-<a class="btn btn-primary" href="/filmes/create">Cadastrar</a>
+<a class="btn btn-danger btn-block" href="/filmes/create">Cadastrar Filmes</a>
 
 <head>
   <title>Tabela Filmes</title>
@@ -15,9 +15,9 @@
   <table class="table table-hover">
     <thead>
       <tr>
-            <th>Id</th>
-            <th>Nome</th>
-            <th>Ano</th>
+            <th><font size="3"  color="#FF0000">Id</font</th>
+            <th><font size="3"  color="#FF0000">Nome</font></th>
+            <th><font size="3"  color="#FF0000">Ano/<font></th>
             
             
             <th></th>

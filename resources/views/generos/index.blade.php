@@ -1,12 +1,13 @@
 @extends('layouts.navbar')
 @section('conteudo')
-<a href="/generos/create">Cadastrar</a>
+<a class="btn btn-danger btn-block" href="/generos/create">Cadastrar Gênero</a>
 
-<table class="table table-striped">
+<div class="container">
+  <table class="table table-striped">
     <thead>
         <tr>
-            <th>Id</th>
-            <th>Nome</th>
+            <th><font size="3"  color="#FF0000">Id</font></th>
+            <th><font size="3"  color="#FF0000">Nome</font></th>
             
             <th></th>
 

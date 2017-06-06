@@ -2,8 +2,15 @@
 @section('conteudo')
 <form method="POST" action="{{ route('generos.store')}}">
      {{csrf_field()}}
+ <div class="container">
+<div class="row">
+
+<font size="3"  color="#FF0000" face="Arial">
 Nome: 
-<input type="text" name="nome">
-<input type="submit" value="Cadastrar">
+</font>
+<input type="text" name="nome" class="form-control">
+</br>
+
+<input type="submit"  class="btn btn-danger btn-block" value="Cadastrar">
 </form>
 @endsection

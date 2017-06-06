@@ -2,11 +2,21 @@
 @section('conteudo')
 <form method="POST" action="{{ route('filmes.store')}}">
      {{csrf_field()}}
-Nome: 
-<input type="text" name="titulo">
+<div class="container">
+<div class="row">
+<font size="3"  color="#FF0000" face="Arial">
+Nome:
+</font>
+<input type="text" name="titulo" class="form-control">
+
+<font size="3"  color="#FF0000" face="Arial">
 Ano:
-<input type="text" name="ano">
+</font>
+<input type="text" name="ano" class="form-control">
+
+<font size="3"  color="#FF0000" face="Arial">
 Genero:
+</font>
 <select name="genero" id="genero" class="form-control">
                             
                             @foreach($generos as $genero)
@@ -16,9 +26,11 @@ Genero:
                         
                         </select>
 
+</br>
 
+<input type="submit" class="btn btn-danger btn-block" value="Cadastrar">
+</div>
+</div>
 
-
-<input type="submit" value="Cadastrar">
 </form>
 @endsection
