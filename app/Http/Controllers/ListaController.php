@@ -87,6 +87,16 @@ class ListaController extends Controller
      * @param  \App\Lista  $lista
      * @return \Illuminate\Http\Response
      */
+     
+     
+         public function addlista()
+    {
+        $filmes = Filme::all();
+        $listas = Lista::all();
+        return view('listas.addlista', compact('listas'),  compact('filmes'));
+    }
+     
+     
     public function destroy(Lista $lista)
     {
         $listas = Lista::find($lista->id);
