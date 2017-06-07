@@ -17,9 +17,8 @@ class CreateFilmesTable extends Migration
             $table->increments('id');
             $table->string('titulo');
             $table->integer('ano');
-            $table->integer('genero_id')->unsigned();
+            $table->integer('genero_id');
             $table->timestamps();
-            $table->foreign('genero_id')->references('id')->on('generos');
         });
     }
 

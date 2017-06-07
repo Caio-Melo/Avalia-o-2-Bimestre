@@ -54,8 +54,7 @@ class GeneroController extends Controller
    
     public function destroy(Genero $genero)
     {
-        $generos = Genero::find($genero->id);
-        $generos->delete();
+        $genero->delete();
         return redirect('generos');
     }
 }

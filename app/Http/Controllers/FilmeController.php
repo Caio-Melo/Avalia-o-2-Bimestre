@@ -15,7 +15,7 @@ class FilmeController extends Controller
      */
     public function index()
     {
-        $filmes = Filme::all();
+        $filmes = Filme::with('genero')->get();
        
        
         return view('filmes.index', compact('filmes'));
@@ -97,8 +97,7 @@ class FilmeController extends Controller
      */
     public function destroy(Filme $filme)
     {
-        $filmes = Filme::find($filme->id);
-        $filmes->delete();
+        $filme->delete();
         return redirect('filmes');
     }
 }

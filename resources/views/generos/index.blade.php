@@ -1,9 +1,12 @@
 @extends('layouts.navbar')
 @section('conteudo')
-<a class="btn btn-danger btn-block" href="/generos/create">Cadastrar Gênero</a>
 
 <div class="container">
-  <table class="table table-striped">
+    <a class="btn btn-danger" href="/generos/create">Cadastrar Gênero</a>
+<br>
+<br>
+
+  <table class="table table-condensed" col-lg-6" style="margin-left: 2px; width: 99%" >
     <thead>
         <tr>
             <th><font size="3"  color="#FF0000">Id</font></th>
@@ -17,8 +20,9 @@
     <tbody>
         @foreach($generos as $genero)
         <tr>
-            <td>{{$genero->id}}</td>
-            <td>{{$genero->nome}}</td>
+            <td><font color="#ffffff">{{$genero->id}}</font>
+            </td>
+            <td><font color="#ffffff">{{$genero->nome}}</font></td>
             <td>
                 <a class="btn btn-primary" href="/generos/{{$genero->id}}/edit">
                                     Editar

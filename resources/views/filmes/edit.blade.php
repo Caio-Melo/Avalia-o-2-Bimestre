@@ -3,13 +3,22 @@
 <form method="POST" action="{{ route('filmes.update', $filmes[0]->id) }}">
      {{csrf_field()}}
      <input type="hidden" name="_method" value="put">
-Nome: 
-<input type="text" name="titulo" value="{{$filmes[0]->titulo}}">
-Ano:
-<input type="text" name="ano" value="{{$filmes[0]->ano}}">
+<div class="container">
 
-Genero:
+<div class="form-group"> 
+<font size="3"  color="#FF0000">Nome:</font>
+<input type="text" name="titulo" class="form-control" value="{{$filmes[0]->titulo}}">
+</div>
+
+<div class="form-group"> 
+<font size="3"  color="#FF0000">Ano:</font>
+<input type="text" name="ano" class="form-control" value="{{$filmes[0]->ano}}">
+</div>
+
+<div class="form-group"> 
+<font size="3"  color="#FF0000">Genero:</font>
 <select name="genero" id="genero" class="form-control">
+</div>
                             
                             @foreach($generos as $genero)
                                 <option value="{{$genero->id}}">{{$genero->nome}}</option>
@@ -20,7 +29,7 @@ Genero:
 
 
 
-
-<input type="submit" value="Cadastrar">
+</div>
+<input type="submit" class="btn btn-danger btn-block" value="Cadastrar">
 </form>
 @endsection

@@ -1,23 +1,17 @@
 @extends('layouts.navbar')
 @section('conteudo')
-<a class="btn btn-danger btn-block" href="/filmes/create">Cadastrar Filmes</a>
-
-<head>
-  <title>Tabela Filmes</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
 
 <div class="container">
-  <table class="table table-hover">
+    <a class="btn btn-danger" href="/filmes/create">Cadastrar Filmes</a>
+    <br>
+    <br>
+  <table class="table table-condensed col-lg-6" style="margin-left: 2px; width: 99%">
     <thead>
       <tr>
             <th><font size="3"  color="#FF0000">Id</font</th>
             <th><font size="3"  color="#FF0000">Nome</font></th>
-            <th><font size="3"  color="#FF0000">Ano/<font></th>
+            <th><font size="3"  color="#FF0000">Ano<font></th>
+            <th><font size="3"  color="#FF0000">Gênero<font></th>
             
             
             <th></th>
@@ -29,9 +23,10 @@
         @foreach($filmes as $filme)
         
         <tr>
-            <td>{{$filme->id}}</td>
-            <td>{{$filme->titulo}}</td>
-            <td>{{$filme->ano}}</td>
+            <td><font color="#ffffff">{{$filme->id}}</font></td>
+            <td><font color="#ffffff">{{$filme->titulo}}</font></td>
+            <td><font color="#ffffff">{{$filme->ano}}</font></td>
+            <td><font color="#ffffff">{{$filme->genero->nome}}</font></td>
             
             <td>
                 <a class="btn btn-primary" href="/filmes/{{$filme->id}}/edit">

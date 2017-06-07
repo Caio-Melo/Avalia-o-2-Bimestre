@@ -28,7 +28,7 @@ Genero:
 
 </br>
 
-<input type="submit" class="btn btn-danger btn-block" value="Cadastrar">
+<input type="submit" class="btn btn-danger"" value="Cadastrar">
 </div>
 </div>
 
