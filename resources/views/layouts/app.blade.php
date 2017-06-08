@@ -13,13 +13,13 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body style="background-color:#333333;">
+<body style="background-color:#ffffff;">
     <div id="app">
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-light" style="background-color: #3399ff;">
             <div class="container-fluid">
                 
  <div class="navbar-header">
-      <a class="navbar-brand" href="/"><font size="6" color="#FF0000" face="Georgia">Revolution Filmes</font></a>
+      <a class="navbar-brand" href="/"><font size="6" color="#000000" face="Arial">Revolution Filmes</font></a>
     </div>
                
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -32,8 +32,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}"><font color="#FF0000">Login</font></a></li>
-                            <li><a href="{{ route('register') }}"><font color="#FF0000">Register</font></a></li>
+                            <li><a href="{{ route('login') }}"><font color="#000000">Login</font></a></li>
+                            <li><a href="{{ route('register') }}"><font color="#000000">Register</font></a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

@@ -5,12 +5,12 @@
 <div class="container">
 <div class="row">
 
-<font size="3"  color="#FF0000" face="Arial">
+<font size="3"  color="#000000" face="Arial">
 Nome: 
 </font>
 <input type="text" name="nome" class="form-control">
 </br>
 
-<input type="submit"  class="btn btn-danger" value="Cadastrar">
+<input type="submit"  class="btn btn-primary" value="Cadastrar">
 </form>
 @endsection

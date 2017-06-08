@@ -1,11 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<body style="background-color:#333333;">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body style="background-color:#ffffff;">
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-danger">
+            <div class="panel panel-info">
                 <div class="panel-heading">Register</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
@@ -63,7 +72,7 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-danger">
+                                <button type="submit" class="btn btn-primary">
                                     Registrar
                                 </button>
                             </div>

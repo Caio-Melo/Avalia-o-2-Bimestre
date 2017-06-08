@@ -7,22 +7,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color:#333333;">
+<body style="background-color:#ffffff;">
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-light" style="background-color: #3399ff;">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/"><font size="6" color="#FF0000" face="Georgia">Revolution Filmes</font></a>
+      <a class="navbar-brand" href="/"><font size="6" color="#000000" face="Arial">Revolution Filmes</font></a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="/filmes"><font size="4" color="#FF0000">Filmes</font></a></li>
-      <li><a href="/generos"><font size="4"  color="#FF0000">Generos</font></a></li>
-      <li><a href="/listas"><font size="4"  color="#FF0000">Playlists</font></a></li>
+      <li><a href="/filmes"><font size="4" color="#000000">Filmes</font></a></li>
+      <li><a href="/generos"><font size="4"  color="#000000">Generos</font></a></li>
+      <li><a href="/listas"><font size="4"  color="#000000">Playlists</font></a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}"><span class="glyphicon glyphicon-log-in"></span><font color="#FF0000"> Login</font></a></li>
-                            <li><a href="{{ route('register') }}"><font color="#FF0000">Register</font></a></li>
+                            <li><a href="{{ route('login') }}"><span class="glyphicon glyphicon-log-in"></span><font color="#000000"> Login</font></a></li>
+                            <li><a href="{{ route('register') }}"><font color="#000000">Register</font></a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

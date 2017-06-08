@@ -4,17 +4,17 @@
      {{csrf_field()}}
 <div class="container">
 <div class="row">
-<font size="3"  color="#FF0000" face="Arial">
+<font size="3"  color="#000000" face="Arial">
 Nome:
 </font>
 <input type="text" name="titulo" class="form-control">
 
-<font size="3"  color="#FF0000" face="Arial">
+<font size="3"  color="#000000" face="Arial">
 Ano:
 </font>
 <input type="text" name="ano" class="form-control">
 
-<font size="3"  color="#FF0000" face="Arial">
+<font size="3"  color="#000000" face="Arial">
 Genero:
 </font>
 <select name="genero" id="genero" class="form-control">
@@ -28,7 +28,7 @@ Genero:
 
 </br>
 
-<input type="submit" class="btn btn-danger"" value="Cadastrar">
+<input type="submit" class="btn btn-primary" value="Cadastrar">
 </div>
 </div>
 
